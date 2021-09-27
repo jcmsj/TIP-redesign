@@ -14,6 +14,8 @@ const pages = {
 };
 
 // Adds the company name in every page
+        
+nav.innerHTML += "<img src=media/logo.png>"
 
 // Adds nav bar links based on the "pages" object
 Object.keys(pages).forEach(name => {

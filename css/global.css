@@ -8,13 +8,13 @@ body {
     margin: 0;
     font-size: 1.2rem;
     background-color: var(--bg);
-    display: grid;
-    grid-template-columns: 0.1fr 0.9fr;
-    column-gap: 4vw;
+    column-gap: 2vw;
 }
 #navbar {
     display: flex;
     flex-direction: column;
+    top:0;
+    position: fixed;
     height: 100%;
     padding: 4vh 2vw;
     row-gap: 2vh;
@@ -24,8 +24,15 @@ body {
     height: 10vmax;
 }
 #main-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
     min-height: 100vh;
     padding: 2vh 2vw;
+    color: white;
+    gap: 30vh 2vw;
+    margin-left: 18vw;
 }
 a {
     text-decoration: none;
