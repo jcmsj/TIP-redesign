@@ -20,7 +20,6 @@ body {
 #navbar img {
     width: 10vmax;
     height: 10vmax;
-    margin-left: 2vw;
 }
 #navbar div {
     display: flex;
@@ -42,8 +41,8 @@ body {
     min-height: 100vh;
     padding: 2vh 2vw;
     color: white;
-    gap: 30vh 2vw; /* Adjust first value later */
-    margin-left: 18vw;
+    row-gap: 30vh;
+    margin-left: 15vw;
 }
 a {
     text-decoration: none;
@@ -53,4 +52,7 @@ a {
 }
 #navbar > a:hover {
     color: white;
+}
+hr {
+    width: 100%;
 }

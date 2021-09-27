@@ -22,24 +22,18 @@ const login_forms = {
 
 function add_links(list) {
     // Adds nav bar links based on the "pages" object
+    let code = "";
     Object.keys(list).forEach(name => {
         const href= pages[name];
-        nav.innerHTML += `<a href=${href}>${name}</a>`;
+        code += `<a href=${href}>${name}</a>`;
     })
+
+    return code;
 }
 
-/* nav.innerHTML += `
-    <div>
-        Login:
-        <br>
-        <a href="https://library.tip.edu.ph/" target=_blank>LIBRARY</a>
-        <a href="https://tip.edu.ph/mail.php" target=_blank>T.I.P. EMAIL</a>
-        <a href="https://tip.edu.ph/aris/" target=_blank>ARIS</a>
-    </div
-`  */
-
-// Adds the ff: Logo, site links, and login forms
-nav.innerHTML += "<img src=media/logo.png>"
-add_links(pages);
-nav.innerHTML += "Login: <br>";
-add_links(login_forms);
+// Adds the Logo, site links, and login forms to the nav bar.
+nav.innerHTML += 
+    "<img src=media/logo.png>" 
+    + add_links(pages) 
+    + "<hr>" 
+    + add_links(login_forms);
