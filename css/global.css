@@ -1,0 +1,39 @@
+:root {
+    --yellow: yellow;
+    --black: black;
+    --bg: #18191A;
+    --white: white;
+}
+body {
+    margin: 0;
+    font-size: 1.2rem;
+    background-color: var(--bg);
+    display: grid;
+    grid-template-columns: 0.1fr 0.9fr;
+    column-gap: 4vw;
+}
+#navbar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 4vh 2vw;
+    row-gap: 2vh;
+}
+#navbar img {
+    width: 10vmax;
+    height: 10vmax;
+}
+#main-content {
+    min-height: 100vh;
+    padding: 2vh 2vw;
+}
+a {
+    text-decoration: none;
+    color: var(--yellow);
+}
+.container {
+    background-color: white;
+}
+#navbar a:hover {
+    color: white;
+}
