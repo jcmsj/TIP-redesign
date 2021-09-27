@@ -37,3 +37,8 @@ nav.innerHTML +=
     + add_links(pages) 
     + "<hr>" 
     + add_links(login_forms);
+
+const mobile_nav = document.getElementById("mobile-nav");
+mobile_nav.addEventListener("click", () => {
+    nav.toggleAttribute("active");
+})
