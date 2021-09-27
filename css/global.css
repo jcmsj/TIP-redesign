@@ -33,7 +33,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: var(--yellow);
+    color: yellow;
 }
 .container {
     background-color: white;
