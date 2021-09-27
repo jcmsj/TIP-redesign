@@ -31,7 +31,7 @@ body {
     min-height: 100vh;
     padding: 2vh 2vw;
     color: white;
-    gap: 30vh 2vw;
+    gap: 30vh 2vw; /* Adjust first value later */
     margin-left: 18vw;
 }
 a {
