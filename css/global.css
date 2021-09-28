@@ -51,7 +51,6 @@ hr {
     flex-direction: column;
     align-self: center;
 
-    min-height: 100vh;
     color: white;
     row-gap: 2vh;
     padding: 2vh 2vw;
@@ -66,6 +65,10 @@ hr {
 }
 .container {
     background-color: white;
+}
+.col-flex {
+    display: flex;
+    flex-direction: column;
 }
 
 /*  For all mobile screens */
