@@ -1,4 +1,4 @@
-const nav = document.getElementById("navbar");
+const nav = document.getElementById("navbar-container");
 
 // An object to store all page names and their respective links
 const pages = {
@@ -20,22 +20,25 @@ const login_forms = {
 
 //"ABET-Accredited Programs": "abet_programs.html", //Todo integrate abet with program offerings
 
-function add_links(list) {
+function add_links(list, _class = "") {
     // Adds nav bar links based on the "pages" object
     let code = "";
     for (let name in list) {
         const href = list[name];
-        code += `<a href="${href}">${name}</a>`;
+        code += `<a href="${href}" ${(_class == "") ? "": _class}>${name}</a>`;
     }
     return code;
 }
 
 // Adds the Logo, site links, and login forms to the nav bar.
+
 nav.innerHTML += `
-    <img src=media/logo.png> 
-    ${add_links(pages)}
-    <hr>
-    ${add_links(login_forms)}
+    <div id="navbar">
+        <img src=media/logo.png> 
+        ${add_links(pages)}
+        <hr>
+        ${add_links(login_forms)}
+    </div>
     `;
 
 const mobile_nav = document.getElementById("mobile-nav");
