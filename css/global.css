@@ -49,7 +49,7 @@ hr {
 }
 #navbar > a {
     color: yellow;
-    margin-bottom: 0.7em;
+    margin-bottom: 0.4em;
 }
 #navbar > a:hover {
     color: white;
@@ -67,7 +67,6 @@ hr {
     min-height: 100vh;
     color: white;
     row-gap: 2vh;
-    padding: 2em 2em;
 }
 #mobile-nav {
     color: white;
@@ -98,7 +97,7 @@ hr {
         width: 60%;
     }
     #main-content {
-        margin: 2em 2em;
+        margin: 1em 1em;
     }
 }
 
@@ -119,6 +118,9 @@ hr {
     }
     #main-content {
         margin-left: 25%;
+    }
+    #navbar > a {
+        margin-bottom: 0.7em;
     }
 }
 /* For Desktop and landscape oriented mobile screens */

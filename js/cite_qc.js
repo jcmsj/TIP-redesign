@@ -20,7 +20,12 @@ function close() {
     sec.removeAttribute("open");
 }
 
-sec.addEventListener("mouseout", close)
-sec.addEventListener("mouseover", e => {
+function open() {
     sec.setAttribute("open", true)
+}
+
+sec.addEventListener("mouseout", close)
+sec.addEventListener("mouseover", open)
+summary.addEventListener("click", () => {
+    sec.toggleAttribute("open")
 })
