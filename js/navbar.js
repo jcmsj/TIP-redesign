@@ -24,7 +24,7 @@ function add_links(list) {
     let code = "";
     Object.keys(list).forEach(name => {
         if (name == "--") {
-            code +="<hr></hr>"
+            code +="<hr>"
         } else {
 
         const href = pages[name];
