@@ -1,11 +1,12 @@
 :root {
-    --bg: #18191A;
+    --bg-0: hsl(210, 4%, 10%);
+    --bg-1: hsl(210, 4%, 15%);
 }
 
 body {
     margin: 0;
     font-size: 1.2rem;
-    background-color: var(--bg);
+    background-color: var(--bg-0);
     column-gap: 2vw;
 }
 a {
@@ -23,7 +24,8 @@ hr {
     padding: 4vh 2vw;
     row-gap: 2vh;
     color: white;
-    background-color: var(--bg);
+    background-color: var(--bg-1);
+    border-right: 2px solid white;
 }
 #navbar img {
     width: 10vmax;
