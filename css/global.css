@@ -47,8 +47,6 @@ hr {
     color: white;
 }
 #main-content {
-    display: flex;
-    flex-direction: column;
     align-self: center;
 
     color: white;
@@ -70,7 +68,10 @@ hr {
     display: flex;
     flex-direction: column;
 }
-
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
 /*  For all mobile screens */
 @media screen and (max-width: 820px) {
     #navbar {
