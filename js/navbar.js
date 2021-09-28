@@ -18,12 +18,6 @@ const pages = {
 
 //"ABET-Accredited Programs": "abet_programs.html", //Todo integrate abet with program offerings
 
-const login = {
-    "Library": "library.tip.edu.ph/",
-    "T.I.P. E-mail": "https://tip.edu.ph/mail.php",
-    "ARIS": "https://tip.edu.ph/aris/"
-};
-
 function add_links(list) {
     // Adds nav bar links based on the "pages" object
     console.table(list)
@@ -31,10 +25,12 @@ function add_links(list) {
     Object.keys(list).forEach(name => {
         if (name == "--") {
             code +="<hr></hr>"
-        }
+        } else {
+
         const href = pages[name];
         console.log(href);
         code += `<a href="${href}">${name}</a>`;
+        }
     })
     console.table(code)
     return code;
@@ -45,13 +41,8 @@ nav.innerHTML +=
     `
     <img src=media/logo.png>
     ${add_links(pages)}
-    <hr></hr>
-    ${add_links(login)}
     `
-    /* + add_links(pages) 
-    + "<hr>" 
-    + add_links(login_forms);
- */
+
 const mobile_nav = document.getElementById("mobile-nav");
 mobile_nav.addEventListener("click", () => {
     nav.toggleAttribute("active");
