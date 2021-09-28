@@ -5,7 +5,8 @@
 
 body {
     margin: 0;
-    font-size: 1.2rem;
+    font-family: "Teko", sans-serif;
+    font-size: 24px;
     background-color: var(--bg-0);
     column-gap: 2vw;
 }
@@ -18,14 +19,16 @@ hr {
 #navbar {
     display: flex;
     flex-direction: column;
-    top:0;
+    top: 0;
+    bottom: 0;
     position: fixed;
     height: 100%;
-    padding: 4vh 2vw;
-    row-gap: 2vh;
+    width: 20%;
+    padding: 1em;
     color: white;
     background-color: var(--bg-1);
     border-right: 2px solid white;
+    overflow: scroll;
 }
 #navbar img {
     width: 10vmax;
@@ -42,6 +45,7 @@ hr {
 }
 #navbar > a {
     color: yellow;
+    margin-bottom: 1em;
 }
 #navbar > a:hover {
     color: white;
@@ -54,7 +58,7 @@ hr {
     min-height: 100vh;
     color: white;
     row-gap: 30vh;
-    padding: 2vh 2vw;
+    padding: 2em 2em;
 }
 #mobile-nav {
     color: white;
@@ -75,9 +79,10 @@ hr {
     }
     #navbar[active] {
         display: flex;
+        width: 50%;
     }
     #main-content {
-        margin: 2vh 2vw;
+        margin: 2em 2em;
     }
 }
 
@@ -97,7 +102,7 @@ hr {
         display: none;
     }
     #main-content {
-        margin-left: 20vw;
+        margin-left: 25%;
     }
 }
 /* For Desktop and landscape oriented mobile screens */
