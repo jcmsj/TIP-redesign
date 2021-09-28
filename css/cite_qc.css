@@ -13,6 +13,7 @@
     li {
         margin-bottom: 1vh;
     }
+
     #actual-content > div {
         display: none;
     }
@@ -23,6 +24,7 @@
         cursor: pointer;
         width: max-content;
     }
+
 
 }
 
@@ -43,11 +45,8 @@
 
 /* For all desktop */
 @media screen and (min-width: 820px) {
-    #nav2 {
-        margin-left: -6%;
-        margin-right: 2%;
-        position: fixed;
-        top: 6vw;
+    #actual-content {
+        padding: 1em;
     }
 }
 /* For Desktop and landscape oriented mobile screens */
