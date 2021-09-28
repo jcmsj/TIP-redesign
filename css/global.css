@@ -16,24 +16,29 @@ a {
 hr {
     width: 100%;
 }
-#navbar {
-    display: flex;
-    flex-direction: column;
+#navbar-container {
     top: 0;
     bottom: 0;
     position: fixed;
-    height: 100%;
-    width: 20%;
-    padding: 1em;
-    color: white;
-    background-color: var(--bg-1);
+    width: 23%;
+
+    overflow-y: scroll;
+
+    background: var(--bg-1);
     border-right: 2px solid white;
-    overflow: scroll;
+}
+#navbar {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    padding: 1em;
 }
 #navbar img {
     width: 10vmax;
     height: 10vmax;
     align-self: center;
+    margin-bottom: 1em;
 }
 #navbar div {
     display: flex;
@@ -45,6 +50,10 @@ hr {
 }
 #navbar > a {
     color: yellow;
+    margin-bottom: 1em;
+}
+#navbar > hr {
+    margin-top: 0em;
     margin-bottom: 1em;
 }
 #navbar > a:hover {
@@ -74,12 +83,12 @@ hr {
 
 /*  For all mobile screens */
 @media screen and (max-width: 820px) {
-    #navbar {
+    #navbar-container {
         display: none;
     }
-    #navbar[active] {
-        display: flex;
-        width: 50%;
+    #navbar-container[active] {
+        display: unset;
+        width: 60%;
     }
     #main-content {
         margin: 2em 2em;

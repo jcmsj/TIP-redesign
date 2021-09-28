@@ -1,4 +1,5 @@
 const nav = document.getElementById("navbar");
+const navContainer = document.getElementById("navbar-container");
 
 // An object to store all page names and their respective links
 const pages = {
@@ -40,5 +41,5 @@ nav.innerHTML +=
 
 const mobile_nav = document.getElementById("mobile-nav");
 mobile_nav.addEventListener("click", () => {
-    nav.toggleAttribute("active");
+    navContainer.toggleAttribute("active");
 })
