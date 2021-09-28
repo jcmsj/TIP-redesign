@@ -20,28 +20,20 @@ const pages = {
 
 function add_links(list) {
     // Adds nav bar links based on the "pages" object
-    console.table(list)
     let code = "";
     Object.keys(list).forEach(name => {
         if (name == "--") {
             code +="<hr>"
         } else {
-
         const href = pages[name];
-        console.log(href);
         code += `<a href="${href}">${name}</a>`;
         }
     })
-    console.table(code)
     return code;
 }
 
 // Adds the Logo, site links, and login forms to the nav bar.
-nav.innerHTML += 
-    `
-    <img src=media/logo.png>
-    ${add_links(pages)}
-    `
+nav.innerHTML += `<img src=media/logo.png> ${add_links(pages)}`
 
 const mobile_nav = document.getElementById("mobile-nav");
 mobile_nav.addEventListener("click", () => {
