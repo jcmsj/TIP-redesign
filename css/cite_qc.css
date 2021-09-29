@@ -6,26 +6,39 @@
     }
     .item {
         border-radius: 13px;
-        background-color: var(--bg-1);
+        background-color: var(--l-bg-1);
         padding: 2vh 2vw;
         margin-bottom: 4vh;
+    }
+    p, ul, li {
+        font-family: 'Times New Roman';
     }
     li {
         margin-bottom: 1vh;
     }
-
-    #actual-content > div {
-        display: none;
-    }
-    #actual-content > div[active] {
-        display: block;
-    }
     details {
         cursor: pointer;
         width: max-content;
+        position: fixed;
+        background-color: var(--l-bg-0);
     }
-
-
+    #scrollable-content > div {
+        display: none;
+        margin-top: 33%;
+    }
+    #scrollable-content > div[active] {
+        display: block;
+    }
+    .header {
+        position: fixed;
+        width: 100%;
+        background-color: var(--l-bg-0);
+        top:0;
+    }
+    #fixed-content hr {
+        margin-top: 12%;
+        margin-bottom: 0;
+    }
 }
 
 /*  For all mobile screens */
@@ -45,8 +58,16 @@
 
 /* For all desktop */
 @media screen and (min-width: 820px) {
-    #actual-content {
+    #fixed-content {
         padding: 1em;
+    }
+    #fixed-content hr {
+        margin-top: 6%;
+        margin-bottom: 0;
+    }
+    #scrollable-content > div {
+        display: none;
+        margin-top: 15%;
     }
 }
 /* For Desktop and landscape oriented mobile screens */
@@ -57,6 +78,6 @@
 /* For all hovering capable screens */
 @media (hover: hover) {
     details option:hover {
-        color:yellow;
+        background-color: var(--l-bg-1);
     }
 }

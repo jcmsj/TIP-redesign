@@ -1,10 +1,10 @@
 /* For All Screens */
 @media screen {
     h2 {
-        color: yellow;
+        color: var(--l-col-0);
     }
     h3 {
-        color: #B0B3B8;
+        color: var(--l-col-0);
     }
     .grid {
         display: grid;
@@ -16,11 +16,11 @@
         font-size: 1.3rem;
     }
     .grid div:hover {
-        background-color: var(--bg-1);
+        background-color: var(--l-bg-1);
     }
     .col-flex a {
         text-decoration: none;
-        color: #E4E6EB;
+        color: var(--l-col-0);
     }
 }
 
