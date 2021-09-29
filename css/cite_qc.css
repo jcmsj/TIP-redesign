@@ -23,12 +23,11 @@ li {
 details {
     cursor: pointer;
     width: max-content;
-    position: fixed;
     background-color: var(--l-bg-0);
 }
 #scrollable-content > div {
     display: none;
-    margin-top: 22vh;
+    margin-top: 6vh;
 }
 #scrollable-content > div[active] {
     display: block;
@@ -36,7 +35,7 @@ details {
 .header {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: sticky;
     width: 100%;
     background-color: var(--l-bg-0);
     top:0;
@@ -59,10 +58,6 @@ ol.char {
     details {
         font-size: 1.3rem;
     }
-    #fixed-content hr {
-        margin-top: 6%;
-    }
-
     /* Lowered position of the menu as to not cover the header's txt */
     #mobile-nav {
         top:8vh;
@@ -103,6 +98,8 @@ ol.char {
     }
     #fixed-content {
         padding: 1vh 1vw;
+        padding-top: 0;
+        margin-right: 2vw;
     }
     /* (2)  */
     br.mob {
