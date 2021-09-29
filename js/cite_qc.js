@@ -28,6 +28,7 @@ summary.addEventListener("click", () => {
 })
 
 function shared_outcomes() {
+    //a
     return `
         <li>apply knowledge of computing, science, and mathematics appropriate to the discipline;</li>
         <li>analyze a complex problem and identify and define the computing requirements appropriate to its solution;</li>
