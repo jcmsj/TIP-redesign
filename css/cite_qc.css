@@ -80,6 +80,10 @@ ol.char {
     p, ul, li {
         font-size: 1.3rem;
     }
+    /* (2) Hides all br tag with class mob (stands for mobile) */
+    br.mob {
+        display: none;
+    }
 }
 
 /*  mobile screens in portrait mode */
@@ -100,7 +104,7 @@ ol.char {
     #fixed-content {
         padding: 1vh 1vw;
     }
-    /* Hides all br tag with class mob (stands for mobile) */
+    /* (2)  */
     br.mob {
         display: none;
     }

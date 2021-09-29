@@ -1,9 +1,6 @@
 /* For All Screens */
 @media screen {
-    h2 {
-        color: var(--l-col-0);
-    }
-    h3 {
+    h2,h3 {
         color: var(--l-col-0);
     }
     .grid {
