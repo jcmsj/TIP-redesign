@@ -5,7 +5,7 @@ h3 {
     height: 8vh;
     width: 8vw;
 }
-.item {
+section div {
     border-radius: 13px;
     background-color: var(--l-bg-1);
     padding: 2vh 2vw;
@@ -25,14 +25,14 @@ details {
     width: max-content;
     background-color: inherit;
 }
-#scrollable-content > div {
+article > div {
     display: none;
-    margin-top: 6vh;
+    margin-top: 2vh;
 }
-#scrollable-content > div[active] {
+article > div[active] {
     display: block;
 }
-.header {
+header {
     display: flex;
     flex-direction: column;
     position: sticky;
@@ -40,7 +40,7 @@ details {
     background: var(--pattern);
     top:0;
 }
-#fixed-content hr {
+#main-content hr {
     margin-bottom: 0;
 }
 ol.char {
@@ -62,7 +62,7 @@ ol.char {
     #mobile-nav {
         top:8vh;
     }
-    .item {
+    section div {
         padding: 2vh 4vw;
     }
 }
@@ -96,7 +96,7 @@ ol.char {
     img {
         width: 50%;
     }
-    #fixed-content {
+    header {
         padding: 1vh 1vw;
         padding-top: 0;
         margin-right: 2vw;
