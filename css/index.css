@@ -30,10 +30,6 @@
     text-align: center;
 }
 
-/* For All Screens */
-@media screen {
-
-}
 
 /*  For all mobile screens */
 @media screen and (max-width: 820px) {

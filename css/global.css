@@ -7,12 +7,14 @@
     --l-bg-0: white;
     --l-bg-1: #DEE4E7;
     --l-col-0: black;
+    --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(247, 250, 252,1)'/%3E%3Ccircle cx='-15' cy='15' r='1' fill='rgba(203, 213, 224,1)'/%3E%3Ccircle cx='-5' cy='25' r='1' fill='rgba(203, 213, 224,1)'/%3E%3Ccircle cx='5' cy='15' r='1' fill='rgba(203, 213, 224,1)'/%3E%3Ccircle cx='25' cy='15' r='1' fill='rgba(203, 213, 224,1)'/%3E%3Ccircle cx='15' cy='25' r='1' fill='rgba(203, 213, 224,1)'/%3E%3Ccircle cx='35' cy='25' r='1' fill='rgba(203, 213, 224,1)'/%3E%3Ccircle cx='15' cy='15' r='1' fill='rgba(246, 224, 94,1)'/%3E%3Ccircle cx='35' cy='15' r='1' fill='rgba(246, 224, 94,1)'/%3E%3Ccircle cx='5' cy='25' r='1' fill='rgba(246, 224, 94,1)'/%3E%3Ccircle cx='25' cy='25' r='1' fill='rgba(246, 224, 94,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+
 }
 body {
     margin: 0;
     font-family: "Teko", sans-serif;
     font-size: 24px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(247, 250, 252,1)'/%3E%3Ccircle cx='-15' cy='15' r='1' fill='rgba(203, 213, 224,1)'/%3E%3Ccircle cx='-5' cy='25' r='1' fill='rgba(203, 213, 224,1)'/%3E%3Ccircle cx='5' cy='15' r='1' fill='rgba(203, 213, 224,1)'/%3E%3Ccircle cx='25' cy='15' r='1' fill='rgba(203, 213, 224,1)'/%3E%3Ccircle cx='15' cy='25' r='1' fill='rgba(203, 213, 224,1)'/%3E%3Ccircle cx='35' cy='25' r='1' fill='rgba(203, 213, 224,1)'/%3E%3Ccircle cx='15' cy='15' r='1' fill='rgba(246, 224, 94,1)'/%3E%3Ccircle cx='35' cy='15' r='1' fill='rgba(246, 224, 94,1)'/%3E%3Ccircle cx='5' cy='25' r='1' fill='rgba(246, 224, 94,1)'/%3E%3Ccircle cx='25' cy='25' r='1' fill='rgba(246, 224, 94,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+    background: var(--pattern);
     column-gap: 2vw;
 }
 a {

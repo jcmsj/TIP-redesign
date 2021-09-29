@@ -23,7 +23,7 @@ li {
 details {
     cursor: pointer;
     width: max-content;
-    background-color: var(--l-bg-0);
+    background-color: inherit;
 }
 #scrollable-content > div {
     display: none;
@@ -37,7 +37,7 @@ details {
     flex-direction: column;
     position: sticky;
     width: 100%;
-    background-color: var(--l-bg-0);
+    background: var(--pattern);
     top:0;
 }
 #fixed-content hr {
