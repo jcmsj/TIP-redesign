@@ -1,8 +1,15 @@
+// The currently shown content
 let displayed = document.getElementById("OBE");
-const options = document.querySelectorAll("option")
+
 const sec = document.getElementById("section-handler");
+
+// This options are children of the section-handler
+const options = document.querySelectorAll("option")
+
+// Shows which section is currently viewed.
 const summary = document.querySelector("summary");
 
+//When user clicks an option, the displayed content is changed
 options.forEach( option => {
     option.addEventListener("click", e => {
         summary.innerText = option.innerText;
@@ -21,14 +28,16 @@ function open() {
     sec.setAttribute("open", true)
 }
 
+
 sec.addEventListener("mouseout", close)
 sec.addEventListener("mouseover", open)
+
 summary.addEventListener("click", () => {
     sec.toggleAttribute("open")
 })
 
 function shared_outcomes() {
-    //a
+    // (2) Most of the items in the Student Outcomes share the same info, to avoid repetition use this function
     return `
         <li>apply knowledge of computing, science, and mathematics appropriate to the discipline;</li>
         <li>analyze a complex problem and identify and define the computing requirements appropriate to its solution;</li>
@@ -43,6 +52,7 @@ function shared_outcomes() {
 }
 
 function shared_extra() {
+    // Same with (2)
     return `
         <li> Analyze a complex computing problem and apply principles of computing and other relevant disciplines to identify solutions.</li>
         <li>Design, implement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program’s discipline.</li>

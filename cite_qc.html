@@ -33,11 +33,15 @@
     <div id="main-content" class="row-flex">
         <div id="fixed-content">
             <div class="header">
-                <h3>College of Information Technology Education - Quezon City Campus  <img src="cite_logo.jpg" class=logo alt="CITE LOGO"></h3>
+                <h3>College of Information Technology Education <br class=mob> - Quezon City Campus  <img src="cite_logo.jpg" class=logo alt="CITE LOGO"></h3>
                 <h4>
+
+
+                <!-- Pseudo selection tag using the combination of details, summary, and the options -->
+                <!-- It is difficult to implement the hover events that I want to do using a normal select tag -->
                 <details id="section-handler" data-value="OBE">
                     <summary>Outcomes-Based Education</summary>
-                        <!--value attribs are the IDs of the hidden elements  -->
+                        <!--set the value attribs to the IDs of their respective hidden elements  -->
                         <option value="OBE">Outcomes-Based Education</option>
                         <option value="PC">Program Certification</option>
                         <option value="ACT">Associate in Computer Technology</option>
@@ -49,7 +53,6 @@
                 <hr>
             </div>
             <div id="scrollable-content">
-            <!-- Todo: Add contents -->
             <div id="OBE" active>
                 <div class="item">
                 <p>The T.I.P. Implementation of outcomes-based education was driven by the following external entities:</p>
@@ -144,12 +147,10 @@
             </div>
 
             <div id="ACT">
-                <p class="item">
-                    The Associate in Computer Technology (ACT) is a two-year program that teaches students analysis, design, implementation and maintenance of software applications for business or scientific purposes.
-                </p>
-                <p class="item">
-                    The program includes comprehensive lectures on different programming languages and computer systems. The program allows for flexibility in one’s career be it towards the actual software applications design or computer systems development and maintenance.
-                </p>
+                <div class="item">
+                    <p>The Associate in Computer Technology (ACT) is a two-year program that teaches students analysis, design, implementation and maintenance of software applications for business or scientific purposes.</p>
+                    <p>The program includes comprehensive lectures on different programming languages and computer systems. The program allows for flexibility in one’s career be it towards the actual software applications design or computer systems development and maintenance.</p>
+                </div>
             </div>
 
             <div id="CS">
@@ -191,7 +192,7 @@
                 <div class="item">
                     <b>Student Outcomes</b>
                     <p>By the time of graduation, students will be able to:</p>
-                    <ol id=shared-0>
+                    <ol id=shared-0 class=char>
                         <li>apply mathematical foundations, algorithmic principles, and computer science theory in the modelling and design of computer-based systems in a way to demonstrate comprehension of the tradeoffs involved in design choices;</li>
                         <li> apply design and development principles in the construction of software systems of varying complexity.</li>
                     </ol>
@@ -238,7 +239,7 @@
                 <div class="item">
                     <b>STUDENT OUTCOMES</b>
                     <p>By the time of graduation, students will be able to:</p>
-                    <ol id="shared-1">
+                    <ol id="shared-1" class=char>
                         <li>Understand and be able to apply the processes that support the use, delivery, and management of information systems within an Information Systems environment.</li>
                     </ol>
                     <p>Effective S.Y. 2018-2019, the following Student Outcomes of the Information Technology Program will apply:</p>
@@ -303,7 +304,7 @@
                 <div class="item">
                     <b>Student Outcomes</b>
                     <p>By the time of graduation, students will be able to:</p>
-                    <ol id=shared-2>
+                    <ol id=shared-2 class=char>
                         <li>identify and analyze user needs and take them into account in the selection, creation, evaluation, and administration of computer based systems;</li>
                         <li>use and apply current technical concepts and practices in the core information technologies;</li>
                         <li>integrate IT based solutions into the user environment effectively;</li>
