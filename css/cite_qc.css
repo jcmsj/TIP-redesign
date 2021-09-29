@@ -25,18 +25,17 @@ details {
     width: max-content;
     background-color: inherit;
 }
-article > div {
+article > section {
     display: none;
     margin-top: 2vh;
 }
-article > div[active] {
+article > section[active] {
     display: block;
 }
 header {
     display: flex;
     flex-direction: column;
     position: sticky;
-    width: 100%;
     background: var(--pattern);
     top:0;
 }
@@ -99,7 +98,9 @@ ol.char {
     header {
         padding: 1vh 1vw;
         padding-top: 0;
-        margin-right: 2vw;
+    }
+    article {
+        margin: 1vh 1vw;
     }
     /* (2)  */
     br.mob {
