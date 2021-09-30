@@ -37,6 +37,7 @@ header {
     position: sticky;
     background: var(--pattern);
     top:0;
+    overflow-x: hidden;
 }
 #main-content hr {
     margin-bottom: 0;
