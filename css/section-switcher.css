@@ -34,8 +34,6 @@ article > section[active] {
     display: block;
 }
 header {
-    display: flex;
-    flex-direction: column;
     position: sticky;
     background: var(--pattern);
     top:0;

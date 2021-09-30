@@ -14,23 +14,327 @@
         
     <!-- CSS -->
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/admissions.css">
+    <link rel="stylesheet" href="css/section-switcher.css">
     <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
         crossorigin="anonymous" 
         referrerpolicy="no-referrer"
     >
+    <style>
+        header img {
+            margin-top: 4vh;
+            width: 100%;
+        }
+
+        /* Half opened pc window */
+        @media screen and (max-width: 820px) and (hover: hover) {
+            #main-content {
+                margin: 0;
+            }
+            #mobile-nav {
+                top:21vh;
+            }
+            header img {
+                margin-top: 0;
+                width: fit-content;
+            }
+            article, h4 {
+                margin: 2vh 2vw;
+            }
+        }
+
+        .enr {
+            margin-left: 130px;
+            position: inherit;
+            width: 70%;
+            height: auto;
+            border-radius: 10px;
+        }
+        li {
+            margin-bottom: 1vh;
+        }
+    </style>
     <!-- JS -->
     <script src="js/navbar.js" defer></script>
+    <script src="js/section-switcher.js" defer></script>
 </head>
 <body>
-    <i class="fas fa-bars" id=mobile-nav></i>
+    <i class="fas fa-bars" id="mobile-nav"></i>
     <div id="navbar-container">
     </div>
 
-    <div id="main-content" class="col-flex">
-        <!-- Write contents here -->
+    <div id="main-content">
+        <header>
+            <img src="media/banner-admissions.jpg" alt="" class=hide-mobile>
+            <h3 class=hide-pc>ADMISSIONS</h3>
+            <h4>
+                <details id="section-handler" data-value="req">
+                    <summary>Requirements</summary>
+                        <option value="req">Requirements</option>
+                        <option value="reg">Registration</option>
+                        <option value="enr">Enrollment Guidelines</option>
+                        <option value="app">Apply Now</option>
+                        <option value="qs">Frequently Asked Questions</option>
+                        <option value="dl">Downloads</option>
+                </details>
+            </h4>
+            <hr>
+        </header>
+        <article>
+            <section id="req" active>
+                <h3>ENROLLMENT REQUIREMENTS</h3>
+                <div>
+                <p>As a general policy, a student applicant who complies with the requirements and passes the entrance examination and/or interview may enroll.</p>
+                <img src="media/enrollment.PNG" class="enr">
+                </div>
+                
+                <b>Senior High School</b>
+                <div>
+                    <ul>
+                        <li>Original High School Card (Form 138, now known as SF9), - this should indicate the LRN of enrollee</li>
+                        <li>Four (4) pcs. 2”x2” recent ID picture</li>
+                        <li>Two (2) pcs. 1”x1” recent ID picture</li>
+                        <li>Original copy of PSA Birth Certificate</li>
+                        <li>Certificate of Good Moral Character</li>
+                        <li>Grade 10 Certificate of Completion</li>
+                    </ul>
+                </div>
+
+                <b>Freshmen</b>
+                <div>                  
+                    <ul>
+                        <li>Original Form 138 (Report Card)/Alternative Learning System (ALS) Examinee Report Form or Certificate of Rating of the Philippine Educational Placement Test (PEPT)</li>
+                        <li>Four (4) pcs. of 2”x2” recent picture</li>
+                        <li>Two (2) pcs. 1”x1” recent ID picture</li>
+                        <li>Original copy of PSA Birth Certificate</li>
+                        <li>Certificate of Good Moral Character</li>
+                        <li>Certification of Honors (for Honor Students)</li>
+                        <li>Online Entrance Exam for SHS graduates with Grade Point Average from 75 to 79</li>
+                    </ul>
+                    <b>Additional Requirements:</b>
+                    <ol>
+                        <li><b>For Marine Engineering Applicants (CMO No. 13 s. 2005)</b></li>
+                        <ul>
+                            <li>Physical Examination</li>
+                            <li>Eyesight Examination (Lantern or any Color Perception Test)</li>
+                            <li>Audiometric Test</li>
+                            <li>Medical requirements such as Urine, Stool, CBC, X-ray, Psychological Test</li>
+                        </ul>
+                        <li><b>For ALS/PEPT Passers</b></li>
+                        <ul>
+                            <li>Diploma or Completion Certificate for Secondary Level</li>
+                        </ul>
+                        <li><b>For Valedictorians, Salutatorians, Third to Tenth Rank</b></li>
+                        <ul>
+                            <li>Certification of Honors signed by the high school principal stating of the honor received.</li>
+                        </ul>
+                        <li><b>For Previous Graduates</b></li>
+                        <ul>
+                            <li>Certification from the high school principal stating that the Form 137A is still in the school file and has not been forwarded to another tertiary school.</li>
+                        </ul>
+                        <li><b>For Filipino Applicants From Schools Abroad (Except for Filipino Schools Under the Department of Education)</b></li>
+                        <ul>
+                            <li>Certificate of Completion of Secondary Education or its equivalent</li>
+                        </ul>
+                        <li><b>For Foreign Nationals</b></li>
+                        <ul>
+                            <li>who graduated from high school in the Philippine</li>
+                            <ul>
+                                <li>Alien Certificate of Registration or I-Card or Special Study Permit (SSP)</li>
+                                <li>Original and photocopy of passport</li>
+                            </ul>
+                            <li>who graduated from high school abroad</li>
+                            <ul>
+                                <li>Certificate of Completion of Secondary Education</li>
+                                <li>Alien Certificate of Registration or I-Card or Special Study Permit (SSP)</li>
+                                <li>Original and photocopy of passport</li>
+                            </ul>
+                        </ul>
+                    </ol>
+                </div>
+                <b>Transferees</b>
+                <div>
+                    <ul>
+                        <li>Original copy of the Transfer Credential</li>
+                        <li>Transcript of Records or Certification of grades from the last school attended</li>
+                        <li>Four (4) pcs. 2”x2” recent/identical pictures</li>
+                        <li>Two (2) pcs. 1”x1” recent ID picture</li>
+                        <li>Photocopy of PSA Birth Certificate</li>
+                        <li>Certificate of Good Moral Character</li>
+                    </ul>
+                </div>
+                <b>Cross-Enrollees</b>
+                <div>
+                    <ul>
+                        <li>Original copy of Cross-Enrolment Permit from the school of origin</li>
+                        <li>Four (4) pcs. 2”x2” recent ID picture</li>
+                    </ul>
+                </div>
+                <b>Graduate Students</b>
+                <div>
+                    <ul>
+                        <li>Original copy of Transcript of Records</li>
+                        <li>Curriculum Vitae (CV)</li>
+                        <li>Photocopy of PSA Birth Certificate</li>
+                        <li>Photocopy of Marriage Contract (for females, if married)</li>
+                        <li>Four (4) pieces of 2" x 2" recent ID photo</li>
+                    </ul>
+                </div>              
+            </section>
+
+            <section id="reg">
+                <b>Freshmen</b>
+                <div>
+                    <ol>
+                        <li>Present requirements for admission at the Admissions Office/Guidance and Counseling Center.</li>
+                        <li>Fill out the application for Admission and Pre-registration.</li>
+                        <ul>
+                            <li>For qualified students, fill out the scholarship and discount form.</li>
+                            <li>For students whose general average is below 80%, take an entrance exam at the Guidance Center.</li>
+                            <li>For Marine Engineering Program, proceed to Medical and Dental Services for physical exam.</li>
+                        </ul>
+                        <li>Proceed to the Admissions and Marketing Office for the Registration of Courses and Assessment of Fees.</li>
+                        <li>Pay the assessed school fees at the Tellering Section.</li>
+                        <li>Apply for a school ID at the Office of Student Affairs and library card at the Library.</li>
+                        <li>Secure schedule for orientation at the Guidance and Counseling Center.</li>
+                    </ol>
+                </div>
+                <b>Old Students</b>
+                <div>
+                    <ol>
+                        <li>Present latest grade slip and registration card.</li>
+                        <li>Fill out the Pre-registration Form.</li>
+                        <ul>
+                            <li>For returnees, secure a re-admission clearance from the Office of Student Affairs.</li>
+                            <li>For under probation, proceed to the Guidance and Counseling Center.</li>
+                            <li>For scholars, accomplish a Scholarship Eligibility Form.</li>
+                            <li>For MarE/Athlete, proceed to the Medical and Dental Services.</li>
+                        </ul>
+                        <li>Get course schedules at the Schedule Board.</li>
+                        <li>Proceed to the Program Window at the Registrar's Office for evaluation and registration of courses, assessment of fees, issuance of registration card and scholarship discounts.</li>
+                        <li>Pay the assessed school fees at the Tellering Section.</li>
+                        <li>Proceed to the Office of Student Affairs for ID validation.</li>
+                    </ol>
+                </div>
+                <b>Transferees</b>
+                <div>
+                    <ol>
+                        <li>Present requirements for admission at the Admissions Office/Guidance and Counseling Center.</li>
+                        <li>Fill out the application for Admission and Pre-registration.</li>
+                        <ul>
+                            <li>For qualified students, fill out the scholarship and discount form</li>
+                            <li>For Marine Engineering Program, proceed to Medical and Dental Services for physical exam</li>                           
+                        </ul>
+                        <li>Proceed to the Program Chair for Evaluation and Interview</li>
+                        <li>Take the Entrance Exam</li>
+                        <li>Secure Schedule of Courses</li>
+                        <li>Registration adn Assessment of Fees at the Admissions and Marketing Office</li>
+                        <li>Payment of Fees</li>
+                        <li>Apply for school ID, Library Card, medical check up and get schedule for orientation</li>
+                    </ol>
+                </div>
+                <b>Cross-Enrollees</b>
+                <div>
+                    <ol>
+                        <li>Present requirements for Admission.</li>
+                        <li>Fill out the Admission and Pre-registration Form at the Registrar's Office.</li>
+                        <li>Get schedule of courses at the Bulletin Boards.</li>
+                        <li>Proceed to the Registrar's Office for registration of courses, assessment of fees and issuance of Registration Card.</li>
+                        <li>Pay the assessed school fees at the Tellering Section.</li>
+                        <li>Apply for a school ID at the Office of Student Affairs and library card at the Library.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="enr">
+                <div>
+                    <p>A student who has complied with all the admission requirements is qualified to enrol. His name must appear the same on birth certificate and admission credentials. In the case of married female students, an authenticated copy of the marriage certificate must be submitted to the Registrar's Office.</p>
+                </div>
+                <b>Old Students</b>
+                <div>
+                    <ul>
+                        <li>Proper sequencing of courses, i.e., taking prerequisite courses before the next higher courses, should be strictly observed; otherwise, the registration maybe invalidated and no credit will be applied despite the grades obtained.</li>
+                        <li>A grade of 5.00 (Failed) in any prerequisite course disqualifies a student from enroling in the next higher course.</li>
+                        <li>If the grade obtained is 4.00 (No Credit), a student shall retake the course within the prescribed one-year period or the mark automatically becomes 5.00 (Failed).</li>
+                        <li>A student who has not completed the required PE and NSTP units after five (5) semesters will not be allowed to carry an 18-unit load including PE and NSTP, unless justifiable reasons are presented.</li>
+                        <li>A student who has been dropped from the roll or expelled due to infractions of school rules and regulations shall not be readmitted.</li>
+                        <li>The guidelines on academic probation shall apply to students who failed in more than fifty percent (50%) of the total units enrolled during the semester.</li>
+                    </ul>
+                </div>
+                <b>Transfer Student</b>
+                <div>
+                    <ul>
+                        <li>A student who wishes to transfer must submit all requirements to the Registrar's Office.</li>
+                        <li>If a student wishes his courses to be credited, he has to write a letter of request to the Dean with an attached course description document from the former school.</li>
+                    </ul>
+                </div>
+                <b>Withdrawal / Cancellation of Course / Discontinuation of Studies</b>
+                <div>
+                    <p>As a general rule, any student who wishes to discontinue his studies during the semester must notify in writing the Registrar, through the Head of Students Affairs/Department Chair, and copy furnish the Student Accounting Section Head. The parents or guardian of the student must note the letter if the student is a minor. Failure to submit the letter is tantamount to forfeiture of the student's rights to any refund of fees.</p>
+                    <p>A student who registers his withdrawal within two weeks after the beginning of classes and who has fully paid the pertinent fees may apply for a refund. With his application for refund stamped and received by the Student Accounting Section within the same week, the student will be charged as follows:</p>
+                    <ol>
+                        <li>Ten percent (10%) of the total amount due for the term if he withdraws within the first week of classes whether he has attended classes or not.</li>
+                        <li>Twenty percent (20%) of the total amount due for the term if he withdraws within the second week of classes whether he has attended classes or not.</li>
+                        <li>The full fee if he withdraws any time after the second week of classes.</li>
+                    </ol>
+                    <p>Because of the heavy workload during the registration period, the Student Accounting Section can accommodate refund claims usually one month after registration.</p>                   
+                </div>
+            </section>
+
+            <section id="app">
+                <div>
+                   <p>Click on the link to start the online application process:</p>
+                   <ul>
+                       <li><a href="https://admission.tip.edu.ph/web/" target="_blank">SHS, College, and Graduate Program</a></li>
+                       <li><a href="https://admission.tip.edu.ph/web/admit_tcp_registration.php" target="_blank">Teaching Certificate Program (TCP)</a></li>
+                   </ul>
+                </div>
+            </section>
+
+            <section id="qs">
+                <b>SENIOR HIGH SCHOOL</b>
+                <div>
+                    <p>Thank you for your interest in applying for T.I.P. Senior High School!</p>
+                    <p>We have prepared these answers to help guide you in your online registration and enrollment. Please click the headers below to see the answers.</p>
+                    <p>If you have other inquiries that have not been covered, you can reach us through:</p>
+                    <p><b>FOR INCOMING T.I.P. SHS STUDENTS:</b> admissions.qc@tip.edu.ph (T.I.P. Quezon City) or admissions.manila@tip.edu.ph (T.I.P. Manila)</p>
+                    <p><b>FOR CURRENT T.I.P. SHS STUDENTS:</b> concerns@tip.edu.ph</p>
+                    <p>Keep safe!</p>
+                </div>
+                <b>COLLEGE</b>
+                <div>
+                    <p>Thank you for your interest in applying!</p>
+                    <p>We have prepared these answers to help guide you in your online registration and enrollment. Please click the headers below to see the answers.</p>
+                    <p>If you have other inquiries that have not been covered, you can reach us through:</p>
+                    <p><b>FOR INCOMING T.I.P. COLLEGE STUDENTS:</b> admissions.qc@tip.edu.ph (T.I.P. Quezon City) or admissions.manila@tip.edu.ph (T.I.P. Manila)</p>
+                    <p><b>FOR CURRENT T.I.P. COLLEGE STUDENTS:</b> concerns@tip.edu.ph</p>
+                    <p>Keep safe!</p>
+                </div>
+                <b>GRADUATE SCHOOL</b>
+                <div>
+                    <p>Thank you for your interest in applying!</p>
+                    <p>We have prepared these answers to help guide you in your online registration and enrollment. Please click the headers below to see the answers.</p>
+                    <p>If you have other inquiries that have not been covered, you can reach us through:</p>
+                    <p><b>For Manila</b><br>mlagradprogram@tip.edu.ph</p>
+                    <p><b>For QC</b><br>admissions.tipqcgraduateprograms@tip.edu.ph</p>
+                    <p>Keep safe!</p>
+                </div>
+            </section>
+
+            <section id="dl">
+                <div>
+                    <p><a href="https://www.tip.edu.ph/admission_flyers/SHS_FLYER.pdf" target="_blank">Senior High School Flyer</a><br></p>
+                    <p><a href="https://www.tip.edu.ph/admission_flyers/UNDERGRAD_FLYER.pdf" target="_blank">Undergraduate Flyer</a><br></p>
+                    <p><a href="https://www.tip.edu.ph/admission_flyers/GRAD_FLYER.pdf" target="_blank">Graduate Programs Flyer</a><br></p>
+                    <p><a href="https://www.tip.edu.ph/admission_flyers/PSM_DATA_SCIENCE_FLYER.pdf" target="_blank">Professional Science Master's Degree in Data Science Flyer</a><br></p>
+                    <p><a href="https://www.tip.edu.ph/admission_flyers/PSM_ENGINEERING_FLYER.pdf" target="_blank">Professional Science Master's Degree in Engineering Management Flyer</a><br></p>
+                    <p><a href="https://www.tip.edu.ph/admission_flyers/PSM_CONSTRUCTION_MANAGEMENT_FLYER.pdf" target="_blank">Professional Science Master's Degree in Construction Management Flyer</a><br></p>
+                    <p><a href="https://www.tip.edu.ph/admission_flyers/TCP_FLYER.pdf" target="_blank">Teaching Certificate Program Flyer</a><br></p>
+                    <p><a href="https://www.tip.edu.ph/admission_flyers/INSTITUTIONAL_FLYER.pdf" target="_blank">T.I.P. Institutional Flyer</a><br></p>
+                </div>
+            </section>
+        </article>
     </div>
 </body>
 </html>
