@@ -1,5 +1,5 @@
 // Default shown content; Strict: Set active attribute for one of the section tags
-let displayed = document.activeElement.querySelector("section");
+var displayed = document.activeElement.querySelector("section");
 
 const sec = document.getElementById("section-handler");
 
