@@ -5,6 +5,9 @@ h3,h4 {
     height: 8vh;
     width: 8vw;
 }
+p {
+    text-align: justify;
+}
 p, ul, li {
     font-family: 'Times New Roman';
 }
@@ -52,7 +55,6 @@ header {
     details {
         font-size: 1.3rem;
     }
-    /* Lowered position of the menu as to not cover the header's txt */
     #mobile-nav {
         top:8vh;
     }
@@ -65,6 +67,7 @@ header {
 @media screen and (max-width: 820px) and (hover: hover) {
     #main-content {
         font-size: 1.1rem;
+        margin: 0;
     }
     p, ul, li {
         font-size: 1.3rem;
