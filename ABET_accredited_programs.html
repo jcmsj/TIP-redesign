@@ -22,6 +22,31 @@
         crossorigin="anonymous" 
         referrerpolicy="no-referrer"
     >
+
+    <style>
+        /* Half opened pc window */
+        @media screen and (max-width: 820px) and (hover: hover) {
+
+            #main-content {
+                margin: 0;
+            }
+            article, h4 {
+                margin: 2vh 2vw;
+            }
+
+            #mobile-nav {
+                top:4vh;
+            }
+        }
+
+        section .row-flex {
+            column-gap: 3vw;
+        }
+        header img {
+            margin-top: 4vh;
+            width: auto;
+        }
+    </style>
     <!-- JS -->
     <script src="js/navbar.js" defer></script>
     <script src="js/section-switcher.js" defer></script>
@@ -33,31 +58,118 @@
 
     <div id="main-content" class="row-flex">
         <header>
-            <h3>ABET-Accredited Programs</h3>
+            <img src="media/banner-ABET-accredited.jpg" alt="" class=hide-mobile>
+            <h3 class=hide-pc>ABET-Accredited Programs</h3>
             <h4>
             <!-- Pseudo selection tag using the combination of details, summary, and the options -->
             <!-- It is difficult to implement the hover events that I want to do using a normal select tag -->
-                <details id="section-handler" data-value="ABET-again">
-                    <summary>Outcomes-Based Education</summary>
+                <details id="section-handler" data-value="Again">
+                    <summary>We got ABET again</summary>
                         <!--set the value attribs to the IDs of their respective hidden elements  -->
-                        <option value="ABET-again">We got ABET again!</option>
-                        <option value="ABET-AP">ABET-Accredited Programs</option>
-                        <option value="ABET-IC">ABET International Accreditation</option>
+                        <option value="Again">We got ABET again!</option>
+                        <option value="AP">ABET-Accredited Programs</option>
+                        <option value="IC">ABET International Accreditation</option>
                 </details>
             </h4>
             <hr>
         </header>
         <article>  
-            <section id="ABET-again" active>
-                1
+            <section id="Again" active>
+                <div>
+                    <center>
+                        <img src="media/WE_GOT_ABET_AGAIN.jpg" alt="">
+                    </center>
+                </div>
+                <div>
+                    <b>T.I.P. GRADUATES READY FOR THE FUTURE OF JOBS</b>
+                    <p>Graduates of our 20 ABET-accredited programs have the biggest advantage of adapting to the continuous improvements in engineering and computing technologies.</p>
+                </div>
+
+                <div>
+                    <b>Why did T.I.P. go for the second cycle of ABET accreditation?</b>
+                    <p>T.I.P. went for the second cycle of ABET international accreditation to “future-proof” its students for the “future of jobs.” ABET accreditation is carried out by international industry and government practitioners and academicians chosen by their respective professional associations that are organizational members of ABET. This ensures that programs and curricula under evaluation are updated and reflect the most recent industry needs and trends. T.I.P.'s engineering and computing programs continuously evolve so that they are in sync with global trends and add further value to our students' educational experience.</p>
+                    <p>Our programs reflect ABET’s outcomes-based framework, ensuring that students and graduates meet and surpass program educational objectives and desired student outcomes consistent with the needs of industry. ABET, for example, recognizes the value of working in diverse multidisciplinary teams, instilling in students the ability to work as a member as well as a team leader to solve complex engineering and computing problems. T.I.P. students learn to design innovative systems to meet specifications within realistic multiple constraints in accordance with appropriate standards. ABET also upholds lifelong learning. We have thus seen first hand how T.I.P. graduates have become more self-confident as they join the Science and Technology workforce.</p>
+                </div>
+                <div>
+                    <b>Why did T.I.P. go for ABET in the first place?</b>
+                    <p>In 2013, T.I.P. got its first ABET accreditation for a total of 20 programs - 14 Engineering programs from the ABET Engineering Accreditation Commission (EAC) and 6 computing programs from the ABET Computing Accreditation Commission (CAC).</p>
+                    <p>T.I.P.'s objective was to secure an international seal of approval for its drive towards excellence in Engineering and Computing programs. After achieving the highest levels of Philippine academic accreditation for most of T.I.P.'s program offerings, T.I.P. needed an external international validation of its outcomes-based education framework.</p>
+                    <p>With the ABET accreditation in the last 6 years, T.I.P. students have enjoyed global standard academic experience and global employment opportunities. T.I.P. students have exhibited improved performance in solving complex problems in engineering and computing design.</p>
+                    <p>The T.I.P. Career Centers have documented 92% rate of employment for T.I.P. Quezon City and 93% rate of employment for T.I.P. Manila.</p>
+                    <p>The T.I.P. Career Center is one of three pioneer model career centers in the country supported by the USAID STRIDE (Science, Technology, Research and Innovation for Development) Program. Mentoring was done by then Career Center Director of Stanford University now Vice Provost of Johns Hopkins University, Dr. Farouk Dey.</p>
+                </div>
             </section>
-            <section id="ABET-AP">
-                2
+            <section id="AP">
+                <div>
+                <b>Engineering Programs Accredited by the Engineering Accreditation Commission (EAC) of ABET</b>
+                    <div class=row-flex>
+                        <ol>
+                        <b>TIP Manila</b>
+                            <li>Chemical Engineering (BSChE)</li>
+                            <li>Civil Engineering (BSCE)</li>
+                            <li>Computer Engineering (BSCpE)</li>
+                            <li>Electrical Engineering (BSEE)</li>
+                            <li>Electronics Engineering (BSECE)</li>
+                            <li>Industrial Engineering (BSIE)</li>
+                            <li>Mechanical Engineering (BSME)</li>
+                        </ol>
+                        <img src="media/EAC_1.jpg" alt="">
+                    </div>
+
+                    <div class=row-flex>
+                        <ol>
+                        <b>TIP Quezon City</b>
+                            <li>Civil Engineering (BSCE)</li>
+                            <li>Civil Engineering (BSCE)</li>
+                            <li>Computer Engineering (BSCpE)</li>
+                            <li>Electrical Engineering (BSEE)</li>
+                            <li>Electronics Engineering (BSECE)</li>
+                            <li>Industrial Engineering (BSIE)</li>
+                            <li>Mechanical Engineering (BSME)</li>
+                        </ol>
+                        <img src="media/EAC_2.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                <b>Computing Programs Accredited by the Computing Accreditation Commission (CAC) of ABET</b>
+                    <div class=row-flex>
+                        <div>
+                            <b>TIP Manila</b>
+                            <ol start=8>
+                                <li>Computer Science (BSCS)</li>
+                                <li>Infromation Systems(BSIS)</li>
+                                <li>Information Technology(BSIT</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <b>TIP Quezon City</b>
+                            <ol start=8>
+                                <li>Computer Science (BSCS)</li>
+                                <li>Infromation Systems(BSIS)</li>
+                                <li>Information Technology(BSIT</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <center>
+                        <img src="media/TIP_Brochure.jpg" alt="">
+                    </center>
+                </div>
+
             </section>
-            <section id="ABET-IC">
-                3
+            <section id="IC">
+                <div>
+                    <center>
+                        <img src="media/ABET_PROGRAMS.jpg" alt="">
+                    </center>
+                </div>
+                <div>
+                    <p>Accreditation is a voluntary, peer-review process that requires programs to undergo comprehensive, periodic evaluations. The evaluations, conducted by teams of volunteer professionals working in industry, government, academe, and private practice within the ABET disciplines, focus on program curricula, faculty, facilities, institutional support, and other important areas. ABET is a not-for-profit organization, owned and operated by its more than 32 professional and technical member societies. An internationally respected organization with some 2,000 volunteers, ABET has set the higher-educational standards in its fields for nearly 80 years. More information about ABET, its member societies, and the evaluation criteria used to accredit programs can be found at www.abet.org.</p>
+                </div>
             </section>
         </article>
+        <center>
+            <a href="#" id=toTop><i class="fa fa-3x fa-arrow-up"></i></a>
+        </center>
     </div>
 </body>
 </html>

@@ -17,6 +17,9 @@
         font-size: 1.4rem;
         color: var(--l-col-0);
     }
+    header img {
+        margin-top: 4vh;
+    }
 }
 
 /*  For all mobile screens */
