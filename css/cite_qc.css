@@ -1,83 +1,16 @@
-h3 {
-    margin-bottom: 0;
-}
-.logo {
-    height: 8vh;
-    width: 8vw;
-}
-section div {
-    border-radius: 13px;
-    background-color: var(--l-bg-1);
-    padding: 2vh 2vw;
-    margin-bottom: 4vh;
-}
-p, ul, li {
-    font-family: 'Times New Roman';
-}
 img {
     width: 100%;
 }
 li {
     margin-bottom: 1vh;
 }
-details {
-    cursor: pointer;
-    width: max-content;
-    background-color: inherit;
-}
-article > section {
-    display: none;
-    margin-top: 2vh;
-}
-article > section[active] {
-    display: block;
-}
-header {
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    background: var(--pattern);
-    top:0;
-}
-#main-content hr {
-    margin-bottom: 0;
-}
+
 ol.char {
     list-style: lower-alpha;
 }
 
-/*  mobile screens */
-@media screen and (max-width: 820px) {
-    #main-content {
-        font-size: 1rem;
-    }
-    p, ul, li {
-        font-size: .9rem;
-    }
-    details {
-        font-size: 1.3rem;
-    }
-    /* Lowered position of the menu as to not cover the header's txt */
-    #mobile-nav {
-        top:8vh;
-    }
-    section div {
-        padding: 2vh 4vw;
-    }
-}
-
 /* Half opened pc window */
 @media screen and (max-width: 820px) and (hover: hover) {
-    #main-content {
-        font-size: 1.1rem;
-    }
-    p, ul, li {
-        font-size: 1.3rem;
-    }
-    /* (2) Hides all br tag with class mob (stands for mobile) */
-    br.mob {
-        display: none;
-    }
 }
 
 /*  mobile screens in portrait mode */
@@ -95,17 +28,6 @@ ol.char {
     img {
         width: 50%;
     }
-    header {
-        padding: 1vh 1vw;
-        padding-top: 0;
-    }
-    article {
-        margin: 1vh 1vw;
-    }
-    /* (2)  */
-    br.mob {
-        display: none;
-    }
 }
 /* For Desktop and landscape oriented mobile screens */
 @media screen and (min-width: 820px), (max-width: 820px) and (orientation: landscape ) {
@@ -114,7 +36,5 @@ ol.char {
 
 /* hovering capable screens */
 @media (hover: hover) {
-    details option:hover {
-        background-color: var(--l-bg-1);
-    }
+
 }

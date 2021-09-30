@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABET-Accredited | Technological Institute of the Philippines</title>
+    <link rel="shortcut icon" href="media/logo.png" type="image/x-icon">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/section-switcher.css">
+    <link rel="stylesheet" href="css/cite_qc.css">
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    >
+    <!-- JS -->
+    <script src="js/navbar.js" defer></script>
+    <script src="js/section-switcher.js" defer></script>
+</head>
+<body>
+    <i class="fas fa-bars" id=mobile-nav></i>
+    <div id="navbar-container">
+    </div>
+
+    <div id="main-content" class="row-flex">
+        <header>
+            <h3>ABET-Accredited Programs</h3>
+            <h4>
+            <!-- Pseudo selection tag using the combination of details, summary, and the options -->
+            <!-- It is difficult to implement the hover events that I want to do using a normal select tag -->
+                <details id="section-handler" data-value="ABET-again">
+                    <summary>Outcomes-Based Education</summary>
+                        <!--set the value attribs to the IDs of their respective hidden elements  -->
+                        <option value="ABET-again">We got ABET again!</option>
+                        <option value="ABET-AP">ABET-Accredited Programs</option>
+                        <option value="ABET-IC">ABET International Accreditation</option>
+                </details>
+            </h4>
+            <hr>
+        </header>
+        <article>  
+            <section id="ABET-again" active>
+                1
+            </section>
+            <section id="ABET-AP">
+                2
+            </section>
+            <section id="ABET-IC">
+                3
+            </section>
+        </article>
+    </div>
+</body>
+</html>

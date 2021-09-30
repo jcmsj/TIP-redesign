@@ -6,6 +6,7 @@ const pages = {
     "About T.I.P.": "about.html",
     "Admissions": "admissions.html",
     "Program Offerings": "programs.html",
+    "ABET-Accredited Programs": "ABET_accredited_programs.html",
     "T.I.P. TechnoCoRe": "https://technocore.tip.edu.ph/",
     "T.I.P. Career Center": "https://careercenter.tip.edu.ph/",
     "News": "news.html",
@@ -18,7 +19,6 @@ const login_forms = {
     "ARIS": "https://tip.edu.ph/aris/"
 } 
 
-//"ABET-Accredited Programs": "abet_programs.html", //Todo integrate abet with program offerings
 
 function add_links(list, _class = "") {
     // Adds nav bar links based on the "pages" object

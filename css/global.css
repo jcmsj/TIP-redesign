@@ -113,6 +113,14 @@ hr {
 
 }
 
+/* Half opened pc window */
+@media screen and (max-width: 820px) and (hover: hover) {
+    /* (2) Hides all br tag with class mob (stands for mobile) */
+    br.mob {
+        display: none;
+    }
+}
+
 /*  For all mobile screens in landscape mode*/
 @media screen and (max-width: 820px) and (orientation: landscape){
 
@@ -129,6 +137,10 @@ hr {
     }
     #navbar > a {
         margin-bottom: 0.7em;
+    }
+    /* (2) */
+    br.mob {
+        display: none;
     }
 }
 /* For Desktop and landscape oriented mobile screens */
