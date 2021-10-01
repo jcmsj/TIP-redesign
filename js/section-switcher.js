@@ -3,7 +3,7 @@ var displayed = document.activeElement.querySelector("section");
 
 const sec = document.getElementById("section-handler");
 
-// This options are children of the section-handler
+// These options are children of the section-handler
 const options = document.querySelectorAll("option");
 
 // Shows which section is currently viewed.

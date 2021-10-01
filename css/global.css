@@ -21,12 +21,10 @@ body {
 a {
     text-decoration: none;
 }
-img {
+img, hr {
     width: 100%;
 }
-hr {
-    width: 100%;
-}
+/* (1) Start of Navigation Bar styles */
 #navbar-container {
     top: 0;
     bottom: 0;
@@ -71,15 +69,6 @@ hr {
     margin-top: 0em;
     margin-bottom: 1em;
 }
-
-#main-content {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-
-    color: var(--l-col-0);
-    row-gap: 2vh;
-}
 #mobile-nav {
     color: var(--l-col-0);
     position: fixed;
@@ -88,9 +77,16 @@ hr {
     font-size: 2rem;
     z-index: 400;
 }
-.container {
-    background-color: white;
+/* (2) End of Navigation Bar styles */
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    color: var(--l-col-0);
+    row-gap: 2vh;
 }
+
 .col-flex {
     display: flex;
     flex-direction: column;
@@ -103,6 +99,7 @@ hr {
 
 /*  For all mobile screens */
 @media screen and (max-width: 820px) {
+    /* (1) */
     #navbar-container {
         display: none;
     }
@@ -110,6 +107,8 @@ hr {
         display: unset;
         width: 60%;
     }
+    /* (2) */
+
     #main-content {
         margin: 1em;
     }
@@ -136,18 +135,16 @@ hr {
     .hide-pc {
         display: none;
     }
-
     #mobile-nav {
         display: none;
+    }
+    #navbar > a {
+        margin-bottom: 0.7em;
     }
     #main-content {
         margin-left: 25%;
         margin-right: 2%;
     }
-    #navbar > a {
-        margin-bottom: 0.7em;
-    }
-
 }
 /* For Desktop and landscape oriented mobile screens */
 @media screen and (min-width: 820px), (max-width: 820px) and (orientation: landscape ) {
