@@ -81,12 +81,14 @@ hr {
     row-gap: 2vh;
 }
 #mobile-nav {
-    color: var(--l-col-0);
+    color: yellow;
+    background-color: black;
     position: fixed;
-    top: 4vh;
-    right: 2vw;
+    top: 24px;
+    right: 24px;
     font-size: 2rem;
     z-index: 400;
+    padding: 12px;
 }
 .container {
     background-color: white;
