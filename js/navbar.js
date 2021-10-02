@@ -14,7 +14,7 @@ const pages = {
 };
 
 const login_forms = {
-    "Library": "library.tip.edu.ph/",
+    "Library": "https://library.tip.edu.ph/",
     "T.I.P. E-mail": "https://tip.edu.ph/mail.php",
     "ARIS": "https://tip.edu.ph/aris/"
 } 
