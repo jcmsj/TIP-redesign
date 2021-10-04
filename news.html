@@ -21,6 +21,21 @@
         crossorigin="anonymous" 
         referrerpolicy="no-referrer"
     >
+    <style>
+        /*  For all mobile screens in landscape mode*/
+        @media screen and (max-width: 820px) and (orientation: landscape){
+            #main-content {
+                margin: 0;
+            }
+            section {
+                margin: 2vh 2vw;
+            }
+            header h3 {
+                margin: 2vh 2vw;
+            }
+        }
+    </style>
+
     <!-- JS -->
     <script src="js/navbar.js" defer></script>
 </head>
@@ -32,31 +47,34 @@
     <div id="main-content" class="col-flex">
         <header>
             <img src="media/banner-news.jpg" alt="" class="hide-mobile">
-            <h4 class="hide-pc">News</h4>
+            <h3 class="hide-pc">News</h3>
         </header>
-        <article>
-            <h2><a href="https://www.tip.edu.ph/article/Teacher-Teacher-A-Tribute-to-Teachers-Everywhere.html" style="color: black; text-decoration: none;">Teacher Teacher, A Tribute to Teachers Everywhere</a></h2>
-            <p> Teacher Teacher, A Tribute to Teachers Everywhere 
-                Eight years ago, the Technological Institute of the Philippines (T.I.P.) 
-                published a book entitled Teacher Teacher as part of its 50th anniversary celebration </p>
-        </article>
-    <br><hr>
-         <article>
-             <h2><a href="https://www.tip.edu.ph/article/Dr-Teresita-U-Quirino-An-Educator-for-Educators.html" style="color: black; text-decoration: none;">Dr. Teresita U. Quirino †: An Educator for Educators</a></h2>
-             <p>A wife to her first love. A mother to her four children. 
-                 A friend to colleagues the world over. A mentor and teacher to employees and 
-                 students alike. A stalwart of the Philippine educational scene</p>
-        </article> 
-    <br><hr>
-         <article>
-             <h2><a href="https://www.tip.edu.ph/article/TIP-non-invasive-bacteria-detector-wounds-scores-podium-finish-2021-James-Dyson-Awards-advances-internationals.html" style="color: black; text-decoration: none;">
-                T.I.P.'s non-invasive bacteria detector on wounds scores podium 
-                 finish in 2021 James Dyson Awards, advances to internationals</a></h2>
-                 <p>
-                    The Technological Institute of the Philippines (T.I.P.) Manila assumed 
-                    a podium spot in the 2021 James Dyson Awards (JDA) with its non-invasive bacteria 
-                     on wounds, an electrochemical</p>
-         </article>
+
+        <section>
+            <article>
+                <h2><a href="https://www.tip.edu.ph/article/Teacher-Teacher-A-Tribute-to-Teachers-Everywhere.html" style="color: black; text-decoration: none;">Teacher Teacher, A Tribute to Teachers Everywhere</a></h2>
+                <p> Teacher Teacher, A Tribute to Teachers Everywhere 
+                    Eight years ago, the Technological Institute of the Philippines (T.I.P.) 
+                    published a book entitled Teacher Teacher as part of its 50th anniversary celebration </p>
+            </article>
+        <br><hr>
+            <article>
+                <h2><a href="https://www.tip.edu.ph/article/Dr-Teresita-U-Quirino-An-Educator-for-Educators.html" style="color: black; text-decoration: none;">Dr. Teresita U. Quirino †: An Educator for Educators</a></h2>
+                <p>A wife to her first love. A mother to her four children. 
+                    A friend to colleagues the world over. A mentor and teacher to employees and 
+                    students alike. A stalwart of the Philippine educational scene</p>
+            </article> 
+        <br><hr>
+            <article>
+                <h2><a href="https://www.tip.edu.ph/article/TIP-non-invasive-bacteria-detector-wounds-scores-podium-finish-2021-James-Dyson-Awards-advances-internationals.html" style="color: black; text-decoration: none;">
+                    T.I.P.'s non-invasive bacteria detector on wounds scores podium 
+                    finish in 2021 James Dyson Awards, advances to internationals</a></h2>
+                    <p>
+                        The Technological Institute of the Philippines (T.I.P.) Manila assumed 
+                        a podium spot in the 2021 James Dyson Awards (JDA) with its non-invasive bacteria 
+                        on wounds, an electrochemical</p>
+            </article>
+        </section>
     </div>
 </body>
 </html>
