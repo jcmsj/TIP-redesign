@@ -33,12 +33,7 @@ article > section {
 article > section[active] {
     display: block;
 }
-header {
-    position: sticky;
-    background: var(--pattern);
-    top:0;
-    overflow-x: hidden;
-}
+
 #main-content hr {
     margin-bottom: 0;
 }
@@ -54,9 +49,6 @@ header {
     details {
         font-size: 1.3rem;
     }
-    #mobile-nav {
-        top: 11vh;
-    }
     section div {
         padding: 2vh 4vw;
     }
@@ -68,10 +60,7 @@ header {
         font-size: 1.1rem;
         margin: 0;
     }
-    header img {
-        margin-top: 0;
-        width: fit-content;
-    }
+
     p, ul, li {
         font-size: 1.3rem;
     }
@@ -84,10 +73,6 @@ header {
 @media screen and (min-width: 820px) {
     img {
         width: 50%;
-    }
-    header img {
-        margin-top: 4vh;
-        width: 100%;
     }
     article {
         margin: 1vh 1vw;

@@ -73,11 +73,11 @@ img, hr {
     color: yellow;
     background-color: black;
     position: fixed;
-    top: 24px;
-    right: 24px;
+    top: 6vh;
+    right: 0px;
     font-size: 2rem;
     z-index: 400;
-    padding: 12px;
+    padding: 9px;
 }
 /* (2) End of Navigation Bar styles */
 #main-content {
@@ -89,7 +89,12 @@ img, hr {
     row-gap: 2vh;
     font-size: 0.8em;
 }
-
+header {
+    position: sticky;
+    background: var(--pattern);
+    top:0;
+    overflow-x: hidden;
+}
 .col-flex {
     display: flex;
     flex-direction: column;
@@ -115,6 +120,9 @@ img, hr {
     #main-content {
         margin: 1em;
     }
+    header h3, header h4 {
+        margin-bottom: 0;
+    }
 }
 
 /*  For all mobile screens in portrait mode */
@@ -127,6 +135,10 @@ img, hr {
 @media screen and (max-width: 820px) and (hover: hover) {
     .hide-pc {
         display: none;
+    }
+    header img {
+        margin-top: 0;
+        width: fit-content;
     }
 }
 /*  For all mobile screens in landscape mode*/
@@ -147,6 +159,10 @@ img, hr {
     #main-content {
         margin-left: 25%;
         margin-right: 2%;
+    }
+    header img {
+        margin-top: 4vh;
+        width: 100%;
     }
 }
 /* For Desktop and landscape oriented mobile screens */

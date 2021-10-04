@@ -27,35 +27,27 @@
         section .row-flex {
             column-gap: 3vw;
         }
-        header img {
-            margin-top: 4vh;
-            width: 100%;
-        }
         section div {
             background: none;
+            margin-bottom: 0;
         }
+
         /*  For all mobile screens */
         @media screen and (max-width: 820px) {
             .row-flex {
                 flex-direction: column;
             }
         }
+
         /* Half opened pc window */
         @media screen and (max-width: 820px) and (hover: hover) {
-            #main-content {
-                margin: 0;
-            }
             #mobile-nav {
-                top:21vh;
-            }
-            header img {
-                margin-top: 0;
-                width: min-content;
-                overflow-x: hidden;
+                margin-left: -3vw;
             }
             article, h4 {
                 margin: 2vh 2vw;
             }
+
         }
 
     </style>
@@ -71,11 +63,9 @@
     <div id="main-content" class="row-flex">
         <header>
             <img src="media/banner-ABET-accredited.jpg" class=hide-mobile>
-            <center>
             <h3 class=hide-pc>
-                    ABET-accredited Programs
+                ABET-accredited Programs
             </h3>
-            </center>
             <h4>
             <!-- Pseudo selection tag using the combination of details, summary, and the options -->
             <!-- It is difficult to implement the hover events that I want to do using a normal select tag -->
