@@ -87,6 +87,7 @@ img, hr {
 
     color: var(--l-col-0);
     row-gap: 2vh;
+    font-size: 0.8em;
 }
 
 .col-flex {
