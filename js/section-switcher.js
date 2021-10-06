@@ -1,24 +1,26 @@
-// Default shown content; Strict: Set active attribute for one of the section tags
+// Get default shown content.
+//Strict: Set active attribute for only one of the section tags.
 var displayed = document.activeElement.querySelector("section");
 
-const sec = document.getElementById("section-handler");
+const section = document.getElementById("section-handler");
 
-// These options are children of the section-handler
+// Get the children of the section-handler
 const options = document.querySelectorAll("option");
 
 // Shows which section is currently viewed.
 const summary = document.querySelector("summary");
 
 function close() {
-    sec.removeAttribute("open");
+    section.removeAttribute("open");
 }
 
 function open() {
-    sec.setAttribute("open", true);
+    section.setAttribute("open", true);
 }
 
-//When user clicks an option, the displayed content is changed
 options.forEach( option => {
+
+    //Changes the displayed content when the user clicks an option.
     option.addEventListener("click", e => {
         summary.innerText = option.innerText;
         displayed.toggleAttribute("active");
@@ -28,9 +30,9 @@ options.forEach( option => {
     })
 })
 
-sec.addEventListener("mouseout", close);
-sec.addEventListener("mouseover", open);
+section.addEventListener("mouseout", close);
+section.addEventListener("mouseover", open);
 
 summary.addEventListener("click", () => {
-    sec.toggleAttribute("open");
+    section.toggleAttribute("open");
 })

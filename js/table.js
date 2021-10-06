@@ -1,6 +1,6 @@
 
 
-function spawn_table() {
+function spawn_table(sy = [],) {
     
     return `
         <table>

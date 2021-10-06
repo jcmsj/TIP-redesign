@@ -16,7 +16,7 @@ function shared_outcomes() {
 function shared_extra() {
     // Same with (2)
     return `
-        <li> Analyze a complex computing problem and apply principles of computing and other relevant disciplines to identify solutions.</li>
+        <li>Analyze a complex computing problem and apply principles of computing and other relevant disciplines to identify solutions.</li>
         <li>Design, implement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program’s discipline.</li>
         <li>Communicate effectively in a variety of professional contexts.</li>
         <li>Recognize professional responsibilities and make informed judgments in computing practice based on legal and ethical principles.</li>
@@ -24,6 +24,11 @@ function shared_extra() {
     `
 }
 
+/**
+ * Appends html code to the HTMLElement
+ * @param {HTMLElement} elem 
+ * @param {function} callback 
+ */
 function generate_items(elem, callback) {
     if (elem != undefined) {
         let prev = elem.innerHTML;
