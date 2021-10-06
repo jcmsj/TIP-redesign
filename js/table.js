@@ -1,5 +1,3 @@
-
-
 function spawn_table(sy = [],) {
     
     return `

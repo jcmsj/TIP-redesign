@@ -77,13 +77,12 @@ article > section[active] {
     article {
         margin: 1vh 1vw;
     }
-    /* (2)  */
     br.mob {
         display: none;
     }
 }
 
-/* hovering capable screens */
+/* Hovering capable screens. */
 @media (hover: hover) {
     details option:hover {
         background-color: var(--l-bg-1);
