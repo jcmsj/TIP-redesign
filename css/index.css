@@ -3,6 +3,50 @@
   border-bottom: 2px solid black;
 }
 
+#latest-carousel {
+    display: flex;
+    justify-content: center;
+    height: 275px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#carousel-parent {
+    background-color: black;
+    height: 100%;
+    width: 90%;
+    margin: unset;
+    border: 2px solid black;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    transition: transform 700ms ease-in;
+    position: absolute;
+}
+
+.carousel-content {
+    height: 100%;
+    width: 50%;
+    background: black;
+    color: white;
+    font-size: 32px;
+    padding: 16px;
+}
+
+.carousel-image {
+    height: 100%;
+    width: 50%;
+    background: yellow;
+}
+
 #quick-links-body {
   display: flex;
   flex-wrap: wrap;
@@ -29,6 +73,36 @@
   position: absolute;
   top: 89%;
   text-align: center;
+}
+
+.fade-out {
+    animation: fade-out-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.fade-in {
+    animation: fade-in-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-out-animation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /*  Mobile screens */
