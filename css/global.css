@@ -28,7 +28,7 @@ img, hr {
 
     overflow-y: scroll;
 
-    background: var(--d-bg-1);
+    background-color: hsl(210, 4%, 15%);
     border-right: 2px solid white;
     z-index: 500;
 }
