@@ -110,6 +110,23 @@ footer {
   width: 100%;
   margin: 2vh 0;
 }
+#footer-go-up {
+    margin-bottom: 32px;
+    height: 24px;
+    width: 24px;
+    padding: 12px;
+    background: var(--d-bg-1);
+    color: yellow;
+    border-radius: 100%;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 300ms ease-out;
+}
+#footer-go-up:hover {
+    transform: scale(110%);
+}
 
 
 /*  Mobile screens */
