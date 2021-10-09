@@ -57,6 +57,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
+  border-bottom: 2px solid black;
 }
 
 #quick-links-body > div {
