@@ -127,7 +127,9 @@ footer {
 #footer-go-up:hover {
     transform: scale(110%);
 }
-
+#footer-top i, #footer-bot i {
+    font-size: 16px;
+}
 
 /*  Mobile screens */
 @media screen and (max-width: 820px) {

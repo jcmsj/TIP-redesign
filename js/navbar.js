@@ -73,7 +73,7 @@ main_content.innerHTML += `
       <i class="fa fa-chevron-up"></i>
     </a>
 
-    <div class="row-flex">
+    <div id="footer-top" class="row-flex">
       <div>
         <i class="fa fa-phone"></i>
         <b>QC Campus</b>
@@ -81,20 +81,20 @@ main_content.innerHTML += `
         /
         <b>Manila Campus</b>
         - <a href="tel:+63287339117" >(+632) 8733-9117</a>
-        </div>
-        <br class="hide-pc">
-        <div>
+      </div>
+      <br class="hide-pc">
+      <div>
         &nbsp; &nbsp; &nbsp;
           <i class="fa fa-envelope"></i>
           <a href="mailto:info@tip.edu.ph">info@tip.edu.ph</a>
       |   <a href="https://tip.edu.ph/privacy-notice.html">privacy notice</a>
-        </div>
       </div>
-      <div>
-        <i class="fa fa-map-marker"></i>
-        363 P. Casal St., Quiapo, Manila
-      /   1338 Arlegui St., Quiapo, Manila
-      / 938 Aurora Blvd., Cubao, Quezon City
-      </div>
-    </footer>
+    </div>
+    <div id="footer-bot">
+      <i class="fa fa-map-marker"></i>
+      363 P. Casal St., Quiapo, Manila
+    /   1338 Arlegui St., Quiapo, Manila
+    / 938 Aurora Blvd., Cubao, Quezon City
+    </div>
+  </footer>
 `;
