@@ -73,11 +73,11 @@ nav > hr {
   color: yellow;
   background-color: black;
   position: fixed;
-  top: 6vh;
+  top: 0;
   right: 0px;
   font-size: 2rem;
   z-index: 400;
-  padding: 9px;
+  padding: 11px;
 }
 /* (2) End of Navigation Bar styles */
 #main-content {
@@ -117,11 +117,18 @@ header {
   /* (2) */
 
   #main-content {
+    margin: 0;
+  }
+  #main-content > article {
     margin: 1em;
   }
   header h3,
   header h4 {
     margin-bottom: 0;
+  }
+  header img {
+    width: 100%;
+    height: 7vh;
   }
 }
 
@@ -139,6 +146,7 @@ header {
   header img {
     margin-top: 0;
     width: fit-content;
+    height: unset;
   }
 }
 /*  Mobile screens in landscape mode*/
