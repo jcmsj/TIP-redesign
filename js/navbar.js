@@ -38,12 +38,12 @@ function add_links(object) {
 
 // Adds the Logo, site links, and login forms to the nav bar.
 nav.innerHTML += `
-    <div id="navbar">
+    <nav>
         <img src=media/logo.png> 
         ${add_links(pages)}
         <hr>
         ${add_links(login_forms)}
-    </div>
+    </nav>
     `;
 
 function reveal_or_hide() {
