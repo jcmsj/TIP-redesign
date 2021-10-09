@@ -92,6 +92,10 @@
     animation-fill-mode: forwards;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 @keyframes fade-out-animation {
     from {
         opacity: 1;
