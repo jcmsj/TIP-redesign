@@ -32,20 +32,20 @@ img, hr {
     border-right: 2px solid white;
     z-index: 500;
 }
-#navbar {
+nav {
     display: flex;
     flex-direction: column;
 
     position: relative;
     padding: 1em;
 }
-#navbar img {
+nav img {
     width: 10vmax;
     height: 10vmax;
     align-self: center;
     margin-bottom: 0.5em;
 }
-#navbar div {
+nav div {
     display: flex;
     flex-direction: column;
     color: black;
@@ -53,14 +53,14 @@ img, hr {
     border-radius: 13px;
     padding: 1vh 1vw;
 }
-#navbar > a {
+nav > a {
     color: yellow;
     margin-bottom: 0.4em;
 }
-#navbar > a:hover {
+nav > a:hover {
     color: white;
 }
-#navbar > hr {
+nav > hr {
     margin-top: 0em;
     margin-bottom: 1em;
 }
@@ -148,7 +148,7 @@ header {
     #mobile-nav {
         display: none;
     }
-    #navbar > a {
+    nav > a {
         margin-bottom: 0.7em;
     }
     #main-content {
