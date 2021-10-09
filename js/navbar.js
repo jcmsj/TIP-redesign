@@ -32,7 +32,7 @@ function add_links(object) {
     let code = "";
     for (let name in object) {
         const href = object[name];
-        code += `<a href="${href}" ${(_class == "") ? "": _class}>${name}</a>`;
+        code += `<a href="${href}">${name}</a>`;
     }
     return code;
 }
