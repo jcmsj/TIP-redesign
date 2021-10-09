@@ -58,10 +58,6 @@ article > section[active] {
   section div {
     padding: 2vh 4vw;
   }
-  header img {
-    width: 100%;
-    height: 7vh;
-  }
 }
 
 /* Half opened pc window */
