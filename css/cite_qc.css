@@ -5,17 +5,26 @@ li {
 ol.char {
   list-style: lower-alpha;
 }
-
-/* Half opened pc window */
-@media screen and (max-width: 820px) and (hover: hover) {
+table {
+  align-self: center;
+  border-width: 3px;
+  border-style:solid;
+  width: 70%;
+}
+th {
+  background-color: yellow;
 }
 
-/*  mobile screens in portrait mode */
-@media screen and (max-width: 820px) and (orientation: portrait) {
+tr {
+  padding: 1vh 0;
+  text-align: center;
 }
 
-/*  mobile screens in landscape mode*/
-@media screen and (max-width: 820px) and (orientation: landscape) {
+section table tr:nth-child(even) {
+  background-color: #FFF;
+}
+section .col-flex {
+  text-align: center;
 }
 
 /* pc */
@@ -23,12 +32,7 @@ ol.char {
   img {
     width: 50%;
   }
-}
-/* For Desktop and landscape oriented mobile screens */
-@media screen and (min-width: 820px),
-  (max-width: 820px) and (orientation: landscape) {
-}
-
-/* hovering capable screens */
-@media (hover: hover) {
+  table {
+    width: 50%;
+  }
 }

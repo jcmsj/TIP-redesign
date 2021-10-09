@@ -73,11 +73,11 @@ nav > hr {
   color: yellow;
   background-color: black;
   position: fixed;
-  top: 6vh;
+  top: 0;
   right: 0px;
   font-size: 2rem;
   z-index: 400;
-  padding: 9px;
+  padding: 11px;
 }
 /* (2) End of Navigation Bar styles */
 #main-content {
@@ -103,6 +103,14 @@ header {
   display: flex;
   flex-direction: row;
 }
+footer {
+  text-align: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  margin: 2vh 0;
+}
+
 
 /*  Mobile screens */
 @media screen and (max-width: 820px) {
@@ -117,11 +125,21 @@ header {
   /* (2) */
 
   #main-content {
+    margin: 0;
+  }
+  #main-content > article {
     margin: 1em;
   }
   header h3,
   header h4 {
     margin-bottom: 0;
+  }
+  header img {
+    width: 100%;
+    height: 7vh;
+  }
+  footer > div {
+    flex-direction: column !important;
   }
 }
 
@@ -129,6 +147,11 @@ header {
 @media screen and (max-width: 820px) and (orientation: portrait) {
   .hide-mobile {
     display: none;
+  }
+
+  /* Restores margin if there's no img banner */
+  #main-content[data-no-banner] {
+    margin: 1em;
   }
 }
 /* Half opened pc window */
@@ -139,7 +162,9 @@ header {
   header img {
     margin-top: 0;
     width: fit-content;
+    height: unset;
   }
+
 }
 /*  Mobile screens in landscape mode*/
 @media screen and (max-width: 820px) and (orientation: landscape) {
@@ -162,6 +187,9 @@ header {
   header img {
     margin-top: 4vh;
     width: 100%;
+  }
+  footer ul {
+    list-style-type: none;
   }
 }
 /* Desktops and landscape oriented mobile screens. */
