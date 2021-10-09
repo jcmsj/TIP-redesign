@@ -29,12 +29,11 @@ const login_forms = {
  * @param {object} object
  */
 function add_links(object) {
-  let code = "";
-  for (let name in object) {
-    const href = object[name];
-    code += `<a href="${href}">${name}</a>`;
+  let code = [];
+  for (const [name, href] of Object.entries(object)) {
+    code.push(`<a href="${href}">${name}</a>`);
   }
-  return code;
+  return code.join("\n");
 }
 
 // Adds the Logo, site links, and login forms to the nav bar.
