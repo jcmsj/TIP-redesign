@@ -1,63 +1,60 @@
-#main-header, #quick-links {
-    border-bottom: 2px solid black;
+#main-header,
+#quick-links {
+  border-bottom: 2px solid black;
 }
 
 #quick-links-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 #quick-links-body > div {
-    background-color: black;
-    margin-bottom: 2em;
-    height: 8em;
-    width: 30%;
-    position: relative;
+  background-color: black;
+  margin-bottom: 2em;
+  height: 8em;
+  width: 30%;
+  position: relative;
 }
 
 #quick-links-body > div > a > img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 #quick-links-body > div > p {
-    width: 100%;
-    position: absolute;
-    top: 89%;
-    text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 89%;
+  text-align: center;
 }
 
 /*  Mobile screens */
 @media screen and (max-width: 820px) {
-
 }
 
 /*  Mobile screens in portrait mode */
 @media screen and (max-width: 820px) and (orientation: portrait) {
-    #quick-links-body > div {
-        width: 49%;
-    }
+  #quick-links-body > div {
+    width: 49%;
+  }
 }
 
 /*  Mobile screens in portrait mode */
-@media screen and (max-width: 820px) and (orientation: landscape){
-
+@media screen and (max-width: 820px) and (orientation: landscape) {
 }
 
 /*  Desktops */
 @media screen and (min-width: 820px) {
-
 }
 /* For Desktop and landscape oriented mobile screens */
-@media screen and (min-width: 820px), (max-width: 820px) and (orientation: landscape ) {
-
+@media screen and (min-width: 820px),
+  (max-width: 820px) and (orientation: landscape) {
 }
 
 /* Hovering capable screens. */
 
 @media (hover: hover) {
-
 }
