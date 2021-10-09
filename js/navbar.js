@@ -2,6 +2,7 @@ let expanded = false;
 
 const nav = document.getElementById("navbar-container");
 const mobile_nav = document.getElementById("mobile-nav");
+const main_content = document.getElementById("main-content");
 
 // (1) An object to store all page names (key) and their respective URLs (value).
 const pages = {
@@ -66,3 +67,34 @@ document.addEventListener(
   },
   false
 );
+
+main_content.innerHTML += `
+
+  <footer class=col-flex>
+  <a href="#" id="toTop"><i class="fa fa-3x fa-arrow-up"></i></a>
+
+    <div class=row-flex>
+      <div>
+      <i class="fa fa-phone"></i> 
+      <b>QC Campus</b> 
+      - <a href="tel:+63289110964">(+632) 8911-0964</a> 
+      / 
+      <b>Manila Campus</b> 
+      - <a href="tel:+63287339117" >(+632) 8733-9117</a>
+      </div>
+      <br class=hide-pc>
+      <div>
+      &nbsp; &nbsp; &nbsp;
+        <i class="fa fa-envelope"></i> 
+        <a href="mailto:info@tip.edu.ph">info@tip.edu.ph</a>
+    |   <a href="https://tip.edu.ph/privacy-notice.html">privacy notice</a>
+      </div>
+    </div>
+    <div>
+      <i class="fa fa-map-marker"></i> 
+      363 P. Casal St., Quiapo, Manila 
+    / 1338 Arlegui St., Quiapo, Manila 
+    / 938 Aurora Blvd., Cubao, Quezon City 
+    </div>
+  </footer>
+`;
