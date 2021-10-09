@@ -3,9 +3,9 @@ const carousel = document.getElementById("carousel-parent");
 
 // Static content in the form of a Description" → Image Source mapping.
 const contents = {
-    "0": "help.jpg",
-    "1": "help.jpg",
-    "2": "help.jpg",
+    "T.I.P. now accepting applicants for second online TCP": "https://tip.edu.ph/index_files/TCP_2_627x377.png",
+    "T.I.P. named 5th top school for engineering research in the country - IRIS": "https://tip.edu.ph/index_files/IRIS_Ranking_628x738.jpg",
+    "T.I.P. continues runner-up streak in Impact 5G Hackathon with carbon-reducing e-commerce app": "https://tip.edu.ph/index_files/Impact_5G_NEW_627x377.png",
 }
 
 // Create the initial carousel entries.
@@ -14,10 +14,12 @@ Object.entries(contents).forEach(([text, src], index) => {
     carousel.innerHTML += `
         <div class="carousel-wrapper" style="z-index: ${zIndex}">
           <div class="carousel-content">
-            ${text}
+            <p>
+              ${text}
+            </p>
           </div>
           <img class="carousel-image" alt="" src="${src}"/>
-        <div/>
+        </div>
     `;
 });
 
@@ -104,3 +106,8 @@ function cycle() {
 // [2] : <>
 //
 // And we're back to the initial state.
+
+// Periodically cycle the banner every 5 seconds.
+setInterval(() => {
+    cycle()
+}, 5000);
