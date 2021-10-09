@@ -1,14 +1,14 @@
-h2,
 h3 {
   color: var(--l-col-0);
+  margin: 0;
 }
 .grid {
   display: grid;
   gap: 2vh 2vw;
 }
 .grid div {
-  padding: 2vh 2vw;
-  row-gap: 3vh;
+  padding: 1vh 2vw;
+  row-gap: 2vh;
   font-size: 1.3rem;
 }
 .col-flex a {
@@ -35,6 +35,7 @@ h3 {
   }
   .grid {
     margin: 2vh 2vw;
+    text-align: center;
   }
 }
 /*  Mobile screens in landscape mode*/

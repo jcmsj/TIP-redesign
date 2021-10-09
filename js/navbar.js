@@ -72,13 +72,12 @@ main_content.innerHTML += `
     <a id="footer-go-up" href="#" id="toTop">
       <i class="fa fa-chevron-up"></i>
     </a>
-
     <div id="footer-top" class="row-flex">
       <div>
         <i class="fa fa-phone"></i>
         <b>QC Campus</b>
         - <a href="tel:+63289110964">(+632) 8911-0964</a>
-        /
+        / <br class=hide-pc>
         <b>Manila Campus</b>
         - <a href="tel:+63287339117" >(+632) 8733-9117</a>
       </div>

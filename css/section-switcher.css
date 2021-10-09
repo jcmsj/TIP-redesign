@@ -6,12 +6,8 @@ header h3, header h4 {
   height: 8vh;
   width: 8vw;
 }
-p {
+p, ul, li {
   text-align: justify;
-}
-p,
-ul,
-li {
   font-family: "Times New Roman";
 }
 details {
@@ -51,6 +47,9 @@ article > section[active] {
   ul,
   li {
     font-size: 0.9rem;
+  }
+  ol, ul {
+    padding-inline-start: 20px;
   }
   details {
     font-size: 1.3rem;
