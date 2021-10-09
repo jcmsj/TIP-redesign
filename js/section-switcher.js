@@ -11,28 +11,27 @@ const options = document.querySelectorAll("option");
 const summary = document.querySelector("summary");
 
 function close() {
-    section.removeAttribute("open");
+  section.removeAttribute("open");
 }
 
 function open() {
-    section.setAttribute("open", true);
+  section.setAttribute("open", true);
 }
 
-options.forEach( option => {
-
-    //Changes the displayed content when the user clicks an option.
-    option.addEventListener("click", e => {
-        summary.innerText = option.innerText;
-        displayed.toggleAttribute("active");
-        displayed = document.getElementById(option.value);
-        displayed.toggleAttribute("active");
-        close();
-    })
-})
+options.forEach((option) => {
+  //Changes the displayed content when the user clicks an option.
+  option.addEventListener("click", (e) => {
+    summary.innerText = option.innerText;
+    displayed.toggleAttribute("active");
+    displayed = document.getElementById(option.value);
+    displayed.toggleAttribute("active");
+    close();
+  });
+});
 
 section.addEventListener("mouseout", close);
 section.addEventListener("mouseover", open);
 
 summary.addEventListener("click", () => {
-    section.toggleAttribute("open");
-})
+  section.toggleAttribute("open");
+});

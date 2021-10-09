@@ -1,90 +1,98 @@
-h3,h4 {
-    margin-bottom: 0;
+h3,
+h4 {
+  margin-bottom: 0;
 }
 .logo {
-    height: 8vh;
-    width: 8vw;
+  height: 8vh;
+  width: 8vw;
 }
 p {
-    text-align: justify;
+  text-align: justify;
 }
-p, ul, li {
-    font-family: 'Times New Roman';
+p,
+ul,
+li {
+  font-family: "Times New Roman";
 }
 details {
-    cursor: pointer;
-    width: max-content;
-    background-color: inherit;
+  cursor: pointer;
+  width: max-content;
+  background-color: inherit;
 }
 section div {
-    border-radius: 13px;
-    background-color: var(--l-bg-1);
-    padding: 2vh 2vw;
-    margin-bottom: 4vh;
+  border-radius: 13px;
+  background-color: var(--l-bg-1);
+  padding: 2vh 2vw;
+  margin-bottom: 4vh;
 }
 section a {
-    color:inherit;
+  color: inherit;
 }
 
 article > section {
-    display: none;
-    margin-top: 2vh;
+  display: none;
+  margin-top: 2vh;
 }
 article > section[active] {
-    display: block;
+  display: block;
 }
 
 #main-content hr {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /*  mobile screens */
 @media screen and (max-width: 820px) {
-    #main-content {
-        font-size: 1rem;
-    }
-    p, ul, li {
-        font-size: .9rem;
-    }
-    details {
-        font-size: 1.3rem;
-    }
-    section div {
-        padding: 2vh 4vw;
-    }
+  #main-content {
+    font-size: 1rem;
+  }
+  p,
+  ul,
+  li {
+    font-size: 0.9rem;
+  }
+  details {
+    font-size: 1.3rem;
+  }
+  section div {
+    padding: 2vh 4vw;
+  }
 }
 
 /* Half opened pc window */
 @media screen and (max-width: 820px) and (hover: hover) {
-    #main-content {
-        font-size: 1.1rem;
-        margin: 0;
-    }
+  #main-content {
+    font-size: 1.1rem;
+    margin: 0;
+  }
 
-    p, ul, li {
-        font-size: 1.3rem;
-    }
-    article, h4 {
-        margin: 2vh 2vw;
-    }
+  p,
+  ul,
+  li {
+    font-size: 1.3rem;
+  }
+  article,
+  h4 {
+    margin: 2vh 2vw;
+  }
 }
 
 /* pc */
 @media screen and (min-width: 820px) {
-    img {
-        width: 50%;
-    }
-    article {
-        margin: 1vh 1vw;
-    }
-    br.mob {
-        display: none;
-    }
+  img {
+    width: 50%;
+  }
+  article {
+    margin: 1vh 1vw;
+  }
+  br.mob {
+    display: none;
+  }
 }
 
 /* Hovering capable screens. */
 @media (hover: hover) {
-    details option:hover {
-        background-color: var(--l-bg-1);
-    }
+  details option:hover {
+    background-color: var(--l-bg-1);
+  }
 }

@@ -1,6 +1,5 @@
-function spawn_table(sy = [],) {
-    
-    return `
+function spawn_table(sy = []) {
+  return `
         <table>
             <tr>
                 <th>School Year</th>
@@ -13,5 +12,5 @@ function spawn_table(sy = [],) {
                 <td>1st Semester</td>
             </tr>
         </table>
-    `
+    `;
 }
