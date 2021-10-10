@@ -1,0 +1,9 @@
+article img {
+    object-fit: contain;
+}
+
+@media screen and (max-width: 820px) {
+    article img {
+        height: min-content;
+    }
+}
