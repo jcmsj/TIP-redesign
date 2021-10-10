@@ -144,20 +144,3 @@
     width: 49%;
   }
 }
-
-/*  Mobile screens in portrait mode */
-@media screen and (max-width: 820px) and (orientation: landscape) {
-}
-
-/*  Desktops */
-@media screen and (min-width: 820px) {
-}
-/* For Desktop and landscape oriented mobile screens */
-@media screen and (min-width: 820px),
-  (max-width: 820px) and (orientation: landscape) {
-}
-
-/* Hovering capable screens. */
-
-@media (hover: hover) {
-}
