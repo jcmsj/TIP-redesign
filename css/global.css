@@ -35,7 +35,7 @@ hr {
 
   background-color: var(--d-bg-1);
   border-right: 2px solid white;
-  z-index: 500;
+  z-index: 998;
 }
 nav {
   display: flex;
@@ -76,7 +76,7 @@ nav > hr {
   top: 0;
   right: 0px;
   font-size: 2rem;
-  z-index: 400;
+  z-index: 999;
   padding: 11px;
 }
 /* (2) End of Navigation Bar styles */
@@ -90,9 +90,10 @@ nav > hr {
   font-size: 0.8em;
 }
 header {
+  top: 0;
+  z-index: 997;
   position: sticky;
   background: var(--pattern);
-  top: 0;
   overflow-x: hidden;
 }
 .col-flex {
