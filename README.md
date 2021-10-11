@@ -1,5 +1,5 @@
 # TIP-redesign
-Final Project for CS-001
+Final Project for CS-001 (A.Y. 2021-2022)
 
 Group Members:
 1. Sons Justin Garcia (Leader)
