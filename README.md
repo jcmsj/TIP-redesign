@@ -7,7 +7,7 @@ Group Members:
 3. Cyrill Eustaquio
 4. Melissa Dollano
 5. Louis Jasper Batas
-6. Rheniel Damasco
+6. Rheiniel Damasco
 
 Note for coder.php:
 It is not part of the website's source code, its role is to compile all the source code into one html file which can be saved as PDF when viewed from the browser. 
